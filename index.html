@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio Page</title>
+  </head>
+  <style>
+
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+
+  .nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: #ff9800;
+  }
+  
+  .projects-section-header {
+    text-align: center;
+    padding: 2rem 0;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .welcome-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: #fff;
+  }
+  
+  .welcome-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-section p {
+    font-size: 1.2rem;
+  }
+  
+ 
+  .projects-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  
+  .projects-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-project-tile {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-project-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-content {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .card-content img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .card-content h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ff5722;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #ff5722;
+    color: #fff;
+    font-size: 1rem;
+  }
+  </style>
+  <body>
+    <nav id="navbar" class="nav">
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hello!, Welcome to my Portfolio</h1>
+      <p>Hope you like my webseite</p>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my Projects</h2>
+      <div class="project-grid">
+        <a href="cat_photo.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="catphoto.png" alt="Cat Photo">
+            <h2>Cat Photo</h2>
+          </div>
+        </a>
+
+        <a href="campercafe.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="campercafephoto.png" alt="Cafe Menu">
+            <h2>Cafe Menu</h2>
+          </div>
+        </a>
+
+        <a href="color_markers.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="colormarkersphoto.png" alt="Color Markers">
+            <h2>Color Markers</h2>
+          </div>
+        </a>
+
+        <a href="registration.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="registration.png" alt="Registration Form">
+            <h2>Registration Form</h2>
+          </div>
+        </a>
+
+        <a href="block.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="survey.png" alt="Survey Form">
+            <h2>Survey Form</h2>
+          </div>
+        </a>
+
+        <a href="rothko.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="rothko.png" alt="Rothko Form">
+            <h2>Rothko Painting</h2>
+          </div>
+        </a>
+
+        <a href="photo_gallery.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="gallery.png" alt="Photo Gallery">
+            <h2>Photo Gallery</h2>
+          </div>
+        </a>
+
+        <a href="Nutrition.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="nutrition.png" alt="Nutrition Label">
+            <h2>Nutrition Label</h2>
+          </div>
+        </a>
+
+        <a href="buiding_quiz.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="quiz.png" alt="Building Quiz">
+            <h2>Building A Quiz</h2>
+          </div>
+        </a>
+
+        <a href="tribute_page.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="activity.png" alt="Tribute Page">
+            <h2>Tribute Page</h2>
+          </div>
+        </a>
+
+        <a href="balance.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="balance.png" alt="Balance Sheet">
+            <h2>Building A Balance Sheet</h2>
+          </div>
+        </a>
+
+        <a href="cat_painting.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="catpainting.png" alt="Cat Painting">
+            <h2>Cat Painting</h2>
+          </div>
+        </a>
+
+        <a href="PORTFOLIO.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="portfolio.png" alt="Basic Portfolio Activity">
+            <h2>Basic Portfolio Activity</h2>
+          </div>
+        </a>
+
+        <a href="building_piano.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="piano.png" alt="Building Piano">
+            <h2>Building Piano</h2>
+          </div>
+        </a>
+
+
+        <a href="skyline.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="skyline.png" alt="Skyline">
+            <h2>Skyline</h2>
+          </div>
+        </a>
+
+        <a href="documpage.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="docupage.png" alt="Documentation Page">
+            <h2>Documentation Page</h2>
+          </div>
+        </a>
+
+        <a href="buindingmagazine.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="magazine.png" alt="Building Magazine">
+            <h2>Building A Magarize</h2>
+          </div>
+        </a>
+
+        <a href="ferriswheel.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="wheel.png" alt="Ferris wheel">
+            <h2>Ferris Wheel</h2>
+          </div>
+        </a>
+ 
+        <a href="penguin.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="penguin.png" alt="Penguin">
+            <h2>Penguin</h2>
+          </div>
+        </a>
+ 
+        <a href="landingpage.html" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="landing.png" alt="Landing Page">
+            <h2>Landing Page</h2>
+          </div>
+        </a>
+       
+        <a href="certificate.png" target="_blank" class="project-project-tile">
+          <div class="card-content">
+            <img src="certificate.png" alt="Landing Page">
+            <h2>FreeCodecamp Certificate</h2>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <footer>
+      <section>
+        <p>&copy; 2025 Oscar</p>
+        <div class="social-links" id="contact">
+          <a href="#">Gmail</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
